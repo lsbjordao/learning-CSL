@@ -1,0 +1,32 @@
+---
+title: "Aprendendo Bibtex + CSL"
+author: Lucas Sá Barreto Jordão
+lang: pt
+format:
+#   html:
+#     embed-resources: true
+#     toc: false
+#     theme:
+#             dark: darkly
+  pdf:
+    toc: false
+    colorlinks: true
+bibliography: ref.bib
+csl: style.csl
+---
+
+# Bibtex
+
+O **BibTeX** é uma tecnologia do LaTeX amplamente utilizada para o gerenciamento de bibliografias em trabalhos acadêmicos. Ele permite que as referências sejam armazenadas em um arquivo separado e integradas automaticamente ao corpo do texto por meio de comandos específicos. O BibTeX é especialmente vantajoso para ferramentas como o **R** e o **Quarto Markdown**, que o utilizam para a formatação automática de citações e referências. No R, por meio de pacotes como **RMarkdown**, e no Quarto, o BibTeX garante a consistência e precisão das citações, além de facilitar a criação de bibliografias sempre atualizadas à medida que o conteúdo do trabalho é desenvolvido. Essa integração torna o processo de citação e gerenciamento de referências mais eficiente e padronizado, sendo uma escolha ideal para pesquisadores que lidam com projetos colaborativos ou grandes volumes de dados bibliográficos.
+
+Confira o código fonte no repositório no github: [https://github.com/lsbjordao/learning-bibtex-csl](https://github.com/lsbjordao/learning-bibtex-csl).
+
+## Citação de grupo de autores
+
+A citação de grupos de autores colaboradores, como o *Brazil Flora Group* (BFG), requer um tratamento especial tanto na citação *in-line* quanto na citação *full* nas referências bibliográficas. Isso se deve à necessidade de utilizar uma macro CSL (*Citation Style Language*) específica para garantir a formatação correta em ambas as modalidades de citação [@BFG_2021].
+
+Algumas revistas limitam o número de co-autores que podem ser citados nas referências bibliográficas. Muitas vezes, você pode ser coautor de um trabalho com uma longa lista de colaboradores, mas ainda assim precisa destacar sua participação na obra. Nesse caso, sugiro listar os co-autores até o autor principal, que, neste exemplo, é R.C. Forzza, e, em seguida, utilizar `...` para indicar que o *array* de autores continua. Essa abordagem respeita a ordem original dos autores, reconhecendo o papel de liderança do último autor e destacando nossa contribuição para essa importante empreitada colaborativa.
+
+Nas referências bibliográficas, é recomendável o uso de um travessão (*em-dash*) para criar uma pausa longa antes de apresentar o nome da sigla, seguido pelos nomes dos co-autores.
+
+## Referências bibliográficas
